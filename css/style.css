@@ -1,0 +1,358 @@
+body {
+    background-color: #f5f4f8;
+    color: #5c5776;
+}
+
+@font-face {
+    font-family: Feather;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/feather.ttf) format("truetype");
+}
+
+/* ICONS STYLES */
+
+/* campana notifiche */
+#notification {
+    padding: 13px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* stars */
+
+section.recommended .stars {
+    fill: rgb(255, 170, 70);
+    gap: 2px;
+    font-size: .9em;
+    margin-right: 5px
+}
+
+section.recommended .my-lg-3 span {
+    font-size: 0.8em !important;
+}
+
+/* icone section one */
+svg.s1-icons {
+    width: 55px;
+    height: 55px;
+    background-color: #fceedc;
+    border-radius: 50%;
+    padding: 16px;
+    margin-right: 15px;
+}
+
+/* bookmarks */
+
+.sv-custom {
+    transition: 0.2s;
+}
+
+/* NAVBAR */
+
+#user img {
+    border-radius: 50%;
+    width: 45px;
+    height: auto;
+}
+
+/* JUMBOTRON */
+div.custom-bg {
+    background-color: #6f57f5 !important;
+}
+
+button.custom-color {
+    background-color: #5fc89b !important;
+}
+
+h1 {
+    font-size: 2.9em !important;
+}
+
+div.jumbotron>.container>.row>div p {
+    font-size: 1.5em !important;
+    opacity: 0.7;
+}
+
+
+/* frecce */
+
+.freccia-s,
+.freccia-d {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+
+.freccia-s {
+    left: -70px !important;
+}
+
+.freccia-d {
+    right: -70px !important;
+}
+
+/* @media (min-width: 992px) {
+    .freccia-s {
+        left: -40px;
+    }
+
+    .freccia-d {
+        right: -40px;
+    }
+} */
+
+
+section.recommended {
+    padding: 3.5rem 0;
+}
+
+section.recommended h2 {
+    font-size: 1.5rem;
+}
+
+section.recommended h2+.card-carousel-container {
+    gap: 20px 0;
+}
+
+section.recommended .card .card-title {
+    display: -webkit-box;
+    -webkit-box-direction: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+section.recommended .card h5 {
+    font-size: 1.2em !important;
+}
+
+
+section.recommended .stars+span {
+    font-size: 0.75rem;
+}
+
+section.recommended .price>span {
+    color: rgb(24, 17, 60);
+    font-weight: 600;
+}
+
+section.recommended .card .card-footer span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* mouseover card shadow */
+
+div.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 10px rgb(224, 224, 224);
+    transition: 0.7s;
+}
+
+hr {
+    color: rgb(194, 193, 193);
+}
+
+
+
+/* MOBILE SETTINGS */
+@media screen and (min-width:500px) and (max-width:768px) {
+
+    footer {
+        font-size: 0.85em;
+    }
+
+    footer>div>ul>li {
+        font-size: 0.9em !important;
+    }
+
+    /* mobile setting for jumbotron */
+    div.jumbotron>.container>.row>div {
+        padding-left: 30px;
+        width: 100% !important;
+    }
+
+    div.jumbotron>.container>.row>div h1 {
+        font-size: 2.5em !important;
+    }
+
+    div.jumbotron>.container>.row>div p {
+        font-size: 1.2em !important;
+
+    }
+
+    div.jumbotron>.container>.row>div button {
+        font-size: 0.8em !important;
+        padding: 15px 20px !important;
+    }
+
+    #qualities .row>div>div h5 {
+        font-size: 1em !important;
+    }
+
+    #qualities .row>div>div p {
+        font-size: .8em !important;
+    }
+
+    svg.s1-icons {
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+        margin-left: 10px;
+    }
+
+    div.card h5 {
+        font-size: 0.9em !important;
+    }
+
+    div.card span {
+        font-size: 0.8em !important;
+    }
+
+    div.price>span,
+    del {
+        font-size: 0.8em !important;
+    }
+
+    div.card svg {
+        width: 10px;
+    }
+
+    .freccia-s {
+        width: 40px !important;
+        height: 40px !important;
+        left: -30px !important;
+        z-index: 3;
+    }
+
+    .freccia-d {
+        width: 40px !important;
+        height: 40px !important;
+        right: -30px !important;
+        z-index: 3;
+    }
+
+    .sv-custom {
+        width: 20px !important;
+    }
+
+
+    /* icone nelle card */
+
+    div.card-body div.mr-2>svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
+    }
+}
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    div.jumbotron>.container>.row>div h1 {
+        font-size: 2.4em !important;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
+    }
+}
+
+
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+
+    div.jumbotron>.container>.row>div {
+        padding-left: 25px !important;
+    }
+
+    div.jumbotron>.container>.row>div h1 {
+        font-size: 1.5em !important;
+    }
+
+    div.jumbotron>.container>.row>div p {
+        font-size: 0.7em !important;
+
+    }
+
+    div.jumbotron>.container>.row>div button {
+        font-size: 0.7em !important;
+        padding: 13px 15px !important;
+    }
+
+    div.card-body {
+        padding: 15px !important;
+    }
+
+    div.card h5 {
+        font-size: 0.8em !important;
+    }
+
+    div.card span {
+        font-size: 0.6em !important;
+    }
+
+    div.price>span,
+    del {
+        font-size: 0.7em !important;
+    }
+
+    div.card svg {
+        width: 10px;
+        margin: 0px !important;
+    }
+
+    .freccia-s {
+        width: 35px !important;
+        height: 35px !important;
+        left: -22px !important;
+        padding: 8px;
+        z-index: 3;
+    }
+
+    .freccia-d {
+        width: 35px !important;
+        height: 35px !important;
+        right: -22px !important;
+        padding: 8px;
+        z-index: 3;
+    }
+
+    #qualities .row>div>div h5 {
+        font-size: 1em !important;
+    }
+
+    #qualities .row>div>div p {
+        font-size: .8em !important;
+    }
+
+    svg.s1-icons {
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+        margin-left: 10px;
+    }
+
+    /* icone nelle card */
+
+    div.card-body div.mr-2>svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
+    }
+}
