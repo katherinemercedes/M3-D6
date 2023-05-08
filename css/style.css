@@ -20,6 +20,28 @@ body {
     margin-right: 10px;
 }
 
+.notification {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+    border-radius: 50%;
+    background: #754ffe;
+    outline: 2px solid #ffffff;
+}
+
+.user-notification {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
+    border-radius: 50%;
+    background: #7bc799;
+    outline: 2px solid #ffffff;
+}
+
 /* stars */
 
 section.recommended .stars {

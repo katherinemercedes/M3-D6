@@ -16,6 +16,7 @@
 
 <body>
     <!-- navbar -->
+    <!-- navbar sezione sinistra - navigazione -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -43,10 +44,6 @@
                 </button>
 
             </div>
-
-
-
-
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -111,22 +108,90 @@
                     </li>
 
                 </ul>
-                <div class="d-md-flex d-none" role="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" id="notification"
-                        viewBox="0 0 512 512">
-                        <path
-                            d="M427.68,351.43C402,320,383.87,304,383.87,217.35,383.87,138,343.35,109.73,310,96c-4.43-1.82-8.6-6-9.95-10.55C294.2,65.54,277.8,48,256,48S217.79,65.55,212,85.47c-1.35,4.6-5.52,8.71-9.95,10.53-33.39,13.75-73.87,41.92-73.87,121.35C128.13,304,110,320,84.32,351.43,73.68,364.45,83,384,101.61,384H410.49C429,384,438.26,364.39,427.68,351.43Z"
-                            style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px;" />
-                        <path d="M320,384v16a64,64,0,0,1-128,0V384"
-                            style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
-                    </svg>
-                    <div id="user">
-                        <img src="../assets/avatar-1.jpg" alt="user one">
 
+                <!-- navbar sezione destra - user -->
+
+                <div class="nav-user-wrapper gap-3 d-md-flex d-none">
+                    <div class="navbar-user-section dropdown d-flex gap-2">
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- pallino notifica -->
+                            <div class="nav-user-icon-wrapper dropdown bg-body-tertiary">
+                                <span class="notification"></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" id="notification"
+                                    viewBox="0 0 512 512">
+                                    <path
+                                        d="M427.68,351.43C402,320,383.87,304,383.87,217.35,383.87,138,343.35,109.73,310,96c-4.43-1.82-8.6-6-9.95-10.55C294.2,65.54,277.8,48,256,48S217.79,65.55,212,85.47c-1.35,4.6-5.52,8.71-9.95,10.53-33.39,13.75-73.87,41.92-73.87,121.35C128.13,304,110,320,84.32,351.43,73.68,364.45,83,384,101.61,384H410.49C429,384,438.26,364.39,427.68,351.43Z"
+                                        style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px;" />
+                                    <path d="M320,384v16a64,64,0,0,1-128,0V384"
+                                        style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                                </svg>
+                            </div>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-end mt-1">
+                            <li>
+                                <a class="dropdown-item" href="#">check this!
+                                    <span class="text-danger fw-bold ms-4">1</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="nav-user-icon-wrapper dropdown me-2" id="user">
+                                <span class="user-notification"></span>
+                                <img src="../assets/avatar-1.jpg" alt="avatar-1" />
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-1 px-0">
+                            <div class="px-2 d-flex align-items-center gap-2">
+                                <div class="nav-user-icon-wrapper dropdown me-2 ms-2" id="user">
+                                    <span class="nav-user-badge"></span>
+                                    <img src="../assets/avatar-1.jpg" alt="avatar-1" />
+                                </div>
+                                <div class="user-menu-info">
+                                    <p class="m-0">Annette Black</p>
+                                    <p class="m-0 text-secondary">annette@geeksui.com</p>
+                                </div>
+                            </div>
+                            <li class="dropdown-divider"></li>
+                            <li class="py-1">
+                                <a class="dropdown-item" href="#">
+                                    <span><i class="bi bi-person mx-2"></i></span>
+                                    <span class="m-0">Profile</span>
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="dropdown-item" href="#">
+                                    <span><i class="bi bi-star mx-2"></i></span>
+                                    <span class="m-0">Subscription</span>
+                                </a>
+                            </li>
+                            <li class="py-1">
+                                <a class="dropdown-item" href="#">
+                                    <span><i class="bi bi-gear-wide mx-2"></i></span>
+                                    <span class="m-0">Settings</span>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li class="py-1">
+                                <a class="dropdown-item" href="#">
+                                    <span><i class="bi bi-power mx-2"></i></span>
+                                    <span class="m-0">Log Out</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
+                    <!-- end NAVBAR IMG SECTION -->
+                    <!-- NAVBAR TOGGLER BTN -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
-        </div>
+    </nav>
+    </div>
+    </div>
     </nav>
     <!--  fine navbar -->
 
